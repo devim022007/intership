@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery Example</title>
+  <style>
+    body {
+      background: rgb(223, 100, 165); /* default background */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 120px;
+      margin: 8px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(8, 77, 122, 0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center; color:rgb(13, 2, 82);">My Image Gallery</h2>
+  <div class="gallery">
+    <img src="images/bubby.jpeg" alt="Photo 1">
+    <img src="images/flower.jpeg" alt="Photo 2">
+    <img src="images/black.jpeg" alt="Photo 3">
+    <img src="images/moon.jpg" alt="Photo 4">
+    <img src="images/betterfly (1).jpeg" alt="Photo 5">
+  </div>
+</body>
+</html>
